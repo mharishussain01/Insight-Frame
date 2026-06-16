@@ -737,7 +737,7 @@ Educational
 
 <!-- VIDEOS GRID -->
 
-<div class="videos-grid fade-in" id="videoGrid">
+<div class="videos-grid" id="videoGrid">
 
 <!-- BIOLOGY -->
 
@@ -1565,7 +1565,7 @@ No spam. Unsubscribe anytime. We respect your inbox.
     <ul>
 
         <li>
-            <a href="mychannellink"
+            <a href="https://youtube.com/@insight.frame_09"
                id="ftYT"
                target="_blank">
                YouTube
@@ -1573,7 +1573,7 @@ No spam. Unsubscribe anytime. We respect your inbox.
         </li>
 
         <li>
-            <a href="mychannellink"
+            <a href="https://www.facebook.com/insightframe09"
                id="ftFB"
                target="_blank">
                Facebook
@@ -1581,7 +1581,7 @@ No spam. Unsubscribe anytime. We respect your inbox.
         </li>
 
         <li>
-            <a href="mychannellink"
+            <a href="https://www.instagram.com/insight.frame_09"
                id="ftIG"
                target="_blank">
                Instagram
@@ -1589,12 +1589,20 @@ No spam. Unsubscribe anytime. We respect your inbox.
         </li>
 
         <li>
-            <a href="mychannellink"
+            <a href="https://www.tiktok.com/@insight.frame_09"
                id="ftTT"
                target="_blank">
                TikTok
             </a>
         </li>
+
+<li>
+    <a href="https://whatsapp.com/channel/0029Vb8FjYp3LdQLWSPZ1b2s"
+       id="ftWA"
+       target="_blank">
+       WhatsApp
+    </a>
+</li>
 
     </ul>
 </div>
@@ -1644,6 +1652,10 @@ function filterVideos(cat, btn) {
     c.style.display = (cat === 'all' || c.dataset.cat === cat) ? '' : 'none';
   });
 }
+window.addEventListener('DOMContentLoaded', () => {
+  const allBtn = document.querySelector('.filter-btn');
+  filterVideos('all', allBtn);
+});
 
 // SUGGEST FORM
 function submitSuggest() {
